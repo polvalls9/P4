@@ -1,0 +1,7 @@
+[options]
+prefix = /home/pol/PAV
+libdir = lib
+buildtype = release
+
+[properties]
+
