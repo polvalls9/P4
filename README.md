@@ -84,6 +84,12 @@ ejercicios indicados.
 
 <img src="img/10.jpg" width="600" align="center">
 
+ `Donde la pipeline principal es:`
+
+<img src="img/11.jpg" width="600" align="center">
+
+`En el apartado de MFCC el -l es 'frame length del input', y -m es el orden del MFCC.`
+
 ### Extracción de características.
 
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
