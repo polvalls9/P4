@@ -32,15 +32,50 @@ ejercicios indicados.
 - Analice el script `wav2lp.sh` y explique la misión de los distintos comandos involucrados en el *pipeline*
   principal (`sox`, `$X2X`, `$FRAME`, `$WINDOW` y `$LPC`). Explique el significado de cada una de las 
   opciones empleadas y de sus valores.
+  
+  `Sox: Explicar què és i que fa`
+
+<img src="img/1.jpg" width="600" align="center">
+
+`x2x: Explicar què és i que fa`
+
+<img src="img/2.jpg" width="600" align="center">
+
+`Frame: Explicar què és i que fa`
+
+<img src="img/3.jpg" width="600" align="center">
+
+`Window: Explicar què és i que fa`
+
+<img src="img/4.jpg" width="600" align="center">
+
+`LPC: Explicar què és i que fa`
+
+<img src="img/5.jpg" width="600" align="center">
 
 - Explique el procedimiento seguido para obtener un fichero de formato *fmatrix* a partir de los ficheros de
   salida de SPTK (líneas 45 a 47 del script `wav2lp.sh`).
+ 
+  `Explicar que fa de la línia 41 a 47. És el que va explicar a classe un bon rato (explicar-ho molt bé i amb detall)`
+
+<img src="img/6.jpg" width="600" align="center">
 
   * ¿Por qué es conveniente usar este formato (u otro parecido)? Tenga en cuenta cuál es el formato de
     entrada y cuál es el de resultado.
+    
+  `Explicar amb detall també.`
 
 - Escriba el *pipeline* principal usado para calcular los coeficientes cepstrales de predicción lineal
   (LPCC) en su fichero <code>scripts/wav2lpcc.sh</code>:
+
+  `Si buscamos la función lpc2c en el manual:`
+
+<img src="img/7.jpg" width="600" align="center">
+
+  `Donde la pipeline principal es:`
+
+<img src="img/6.jpg" width="600" align="center">
+
 
 - Escriba el *pipeline* principal usado para calcular los coeficientes cepstrales en escala Mel (MFCC) en su
   fichero <code>scripts/wav2mfcc.sh</code>:
@@ -49,7 +84,7 @@ ejercicios indicados.
 
 - Inserte una imagen mostrando la dependencia entre los coeficientes 2 y 3 de las tres parametrizaciones
   para todas las señales de un locutor.
-  
+
   + Indique **todas** las órdenes necesarias para obtener las gráficas a partir de las señales 
     parametrizadas.
   + ¿Cuál de ellas le parece que contiene más información?
