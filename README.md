@@ -72,7 +72,7 @@ ejercicios indicados.
 
 <img src="img/7.jpg" width="600" align="center">
 
-  `Donde la pipeline principal es que hemos escrito es:`
+  `Donde la pipeline principal que hemos escrito es:`
 
 <img src="img/6.jpg" width="600" align="center">
 
@@ -93,7 +93,7 @@ ejercicios indicados.
 
 <img src="img/10.jpg" width="600" align="center">
 
- `Donde la pipeline principal es que hemos escrito es:`
+ `Donde la pipeline principal que hemos escrito es:`
 
 <img src="img/11.jpg" width="600" align="center">
 
