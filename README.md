@@ -76,6 +76,8 @@ ejercicios indicados.
 
 <img src="img/6.jpg" width="600" align="center">
 
+`En el apartado de LPCC el -l es 'frame length del input', y -m es el orden del LPC. Además en el apartado de LPC2C el -m es el orden del LPC y -M el orden del cepstrum.`
+
 `Le pasamos los siguientes parámetros, mirando antes el manual:`
 
 <img src="img/12.jpg" width="600" align="center">
@@ -96,6 +98,7 @@ ejercicios indicados.
 <img src="img/11.jpg" width="600" align="center">
 
 `En el apartado de MFCC el -l es 'frame length del input', y -m es el orden del MFCC.`
+
 
 `Le pasamos los siguientes parámetros, mirando antes el manual:`
 
