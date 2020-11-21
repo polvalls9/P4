@@ -72,23 +72,38 @@ ejercicios indicados.
 
 <img src="img/7.jpg" width="600" align="center">
 
-  `Donde la pipeline principal es:`
+  `Donde la pipeline principal es que hemos escrito es:`
 
 <img src="img/6.jpg" width="600" align="center">
 
+`Le pasamos los siguientes parámetros, mirando antes el manual:`
+
+<img src="img/11.jpg" width="600" align="center">
+
+`Y después añadimos la función compute_lpcc() en el fichero run_spkid.sh:`
+
+<img src="img/11.jpg" width="600" align="center">
 
 - Escriba el *pipeline* principal usado para calcular los coeficientes cepstrales en escala Mel (MFCC) en su
   fichero <code>scripts/wav2mfcc.sh</code>:
 
-`Si buscamos la función lpc2c en el manual:`
+`Si buscamos la función mfcc en el manual:`
 
 <img src="img/10.jpg" width="600" align="center">
 
- `Donde la pipeline principal es:`
+ `Donde la pipeline principal es que hemos escrito es:`
 
 <img src="img/11.jpg" width="600" align="center">
 
 `En el apartado de MFCC el -l es 'frame length del input', y -m es el orden del MFCC.`
+
+`Le pasamos los siguientes parámetros, mirando antes el manual:`
+
+<img src="img/11.jpg" width="600" align="center">
+
+`Y después añadimos la función compute_mfcc() en el fichero run_spkid.sh:`
+
+<img src="img/11.jpg" width="600" align="center">
 
 ### Extracción de características.
 
