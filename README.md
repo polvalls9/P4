@@ -58,7 +58,7 @@ ejercicios indicados.
  
   `Explicar que fa de la línia 41 a 47. És el que va explicar a classe un bon rato (explicar-ho molt bé i amb detall)`
 
-<img src="img/6.jpg" width="600" align="center">
+<img src="img/8.jpg" width="600" align="center">
 
   * ¿Por qué es conveniente usar este formato (u otro parecido)? Tenga en cuenta cuál es el formato de
     entrada y cuál es el de resultado.
