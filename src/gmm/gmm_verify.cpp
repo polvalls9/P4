@@ -48,8 +48,6 @@ float verify(const GMM &gmm_candidate, const GMM & gmm_world, const fmatrix &dat
 
 }
 
-
-
 int main(int argc, const char *argv[]) {
 
   vector<Directory> input_dirs, gmm_dirs;
