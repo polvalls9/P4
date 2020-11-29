@@ -116,7 +116,7 @@ ejercicios indicados.
   + Indique **todas** las órdenes necesarias para obtener las gráficas a partir de las señales 
     parametrizadas.
     
-Con el comando `fmatrix_show work/lp/BLOCK01/SES017/*.lp | egrep '^\[' | cut -f2,3 > lp_2_3.txt` hemos guardado los valores en un archivo de texto y posteriormente lo hemos importado en MATLAB y vemos lo siguiente:
+Con el comando `fmatrix_show work/lp/BLOCK01/SES017/*.lp | egrep '^\[' | cut -f4,5 > lp_2_3.txt` hemos guardado los valores en un archivo de texto y posteriormente lo hemos importado en MATLAB y vemos lo siguiente:
 
 <img src="img/22.jpg" width="600" align="center">
 <img src="img/24.jpg" width="600" align="center">
