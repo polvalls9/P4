@@ -232,6 +232,8 @@ El resultado con LP ha sido:
       ==> CostDetection: 90.0
       ==============================================
       Thu Dec  3 17:32:51 CET 2020
+    
+ Por lo que la tabla final queda de la siguiente manera:
   
  |                        | LP   | LPCC | MFCC |
   |------------------------|:----:|:----:|:----:|
