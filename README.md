@@ -200,7 +200,7 @@ Complete el código necesario para realizar verificación del locutor y optimice
   pérdidas, y el score obtenido usando la parametrización que mejor resultado le hubiera dado en la tarea
   de reconocimiento.
   
-  Nuestro mejor resultado ha sido con el MFCC:
+Nuestro mejor resultado ha sido con el MFCC:
   
       ==============================================
       THR: 1.00639006307311
