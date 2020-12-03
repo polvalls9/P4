@@ -233,6 +233,10 @@ El resultado con LP ha sido:
       ==============================================
       Thu Dec  3 17:32:51 CET 2020
   
+ |                        | LP   | LPCC | MFCC |
+  |------------------------|:----:|:----:|:----:|
+  |  Cost Detection |  90.0  |  72.5  |  16.8 |
+  
 ### Test final
 
 - Adjunte, en el repositorio de la práctica, los ficheros `class_test.log` y `verif_test.log` 
