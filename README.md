@@ -143,9 +143,11 @@ Con el comando `fmatrix_show work/lp/BLOCK01/SES017/*.lp | egrep '^\[' | cut -f4
   
   + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
   
+        Explicar la comparació
+  
 - Según la teoría, ¿qué parámetros considera adecuados para el cálculo de los coeficientes LPCC y MFCC?
 
-      Explicar la comparació
+        Explicar la comparació
 
 ### Entrenamiento y visualización de los GMM.
 
