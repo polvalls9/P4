@@ -14,14 +14,15 @@ cleanup() {
    \rm -f $base.*
 }
 
-if [[ $# != 3 ]]; then
-   echo "$0 mfcc_order input.wav output.mcp"
+if [[ $# != 4 ]]; then
+   echo "$0 mfcc_order nfilter input.wav output.mcp"
    exit 1
 fi
 
 mfcc_order=$1
-inputfile=$2
-outputfile=$3
+nfilter=$2
+inputfile=$3
+outputfile=$4
 
 UBUNTU_SPTK=1
 if [[ $UBUNTU_SPTK == 1 ]]; then
@@ -39,8 +40,8 @@ else
 fi
 
 # Main command for feature extration WATCHING THE MANUAL
-sox $inputfile -t raw -e signed -b 16 - | $X2X +sf | $FRAME -l 240 -p 80 | $WINDOW -l 240 -L 240 |
-	$MFCC -l 240 -m $mfcc_order -n 26 -E > $base.mcp
+sox $inputfile -t raw -e signed -b 16 - | $X2X +sf | $FRAME -l 400 -p 80 |
+	$MFCC -l 400 -n $nfilter -m $mfcc_order > $base.mcp
 
 # Our array files need a header with the number of cols and rows:
 ncol=$((mfcc_order)) 

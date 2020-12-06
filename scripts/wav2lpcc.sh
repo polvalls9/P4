@@ -42,8 +42,8 @@ else
 fi
 
 # Main command for feature extration WATCHING THE MANUAL
-sox $inputfile -t raw -e signed -b 16 - | $X2X +sf | $FRAME -l 240 -p 80 | $WINDOW -l 240 -L 240 |
-	$LPC -l 240 -m $lpc_order | $LPC2C -m $lpc_order -M $cepstrum_order> $base.cep
+sox $inputfile -t raw -e signed -b 16 - | $X2X +sf | $FRAME -l 400 -p 80 | $WINDOW -l 400 -L 512 |
+	$LPC -l 400 -m $lpc_order | $LPC2C -m $lpc_order -M $cepstrum_order> $base.cep
 
 # Our array files need a header with the number of cols and rows:
 ncol=$((cepstrum_order+1)) # lpcc p =>  (gain a1 a2 ... ap) 
