@@ -124,7 +124,7 @@ Con el comando `fmatrix_show work/lp/BLOCK01/SES017/*.lp | egrep '^\[' | cut -f4
 
   + ¿Cuál de ellas le parece que contiene más información?
   
-`Explicar el perquè, correlacio... etc`
+        Explicar el perquè, correlacio... etc
 
 - Usando el programa <code>pearson</code>, obtenga los coeficientes de correlación normalizada entre los
   parámetros 2 y 3 para un locutor, y rellene la tabla siguiente con los valores obtenidos.
@@ -143,9 +143,11 @@ Con el comando `fmatrix_show work/lp/BLOCK01/SES017/*.lp | egrep '^\[' | cut -f4
   
   + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
   
+        Explicar la comparació
+  
 - Según la teoría, ¿qué parámetros considera adecuados para el cálculo de los coeficientes LPCC y MFCC?
 
-`Explicar la comparació`
+       Explicar la comparació
 
 ### Entrenamiento y visualización de los GMM.
 
@@ -164,7 +166,33 @@ Complete el código necesario para realizar reconociminto del locutor y optimice
 
 - Inserte una tabla con la tasa de error obtenida en el reconocimiento de los locutores de la base de datos
   SPEECON usando su mejor sistema de reconocimiento para los parámetros LP, LPCC y MFCC.
+   
+Hemos probado con el método VQ i EM-Split, ya que en teoria són mejores, pero los mejores resultados nos lo ha dado el método aleatorio, con un número elevado de gaussianas eso sí. Hemos decidido coger como método final el aleatorio ya que es en el que tenemos mejores resultados pese al largo cálculo de las tasas de error.
+      
+  La tasa de error del parámetro LP:
+  
+      Thu Dec 3 17:42:30 CET 2020: classerr ---
+      nerr=92 ntot=785        error_rate=11.72%
+      Thu Dec  3 17:42:30 CET 2020
+      
+La tasa de error del parámetro LPCC: 
 
+      Thu Dec 3 17:47:08 CET 2020: classerr ---
+      nerr=27 ntot=785        error_rate=3.44%
+      Thu Dec  3 17:47:08 CET 2020
+      
+La tasa de error del parámetro MFCC:
+
+      Thu Dec 3 17:38:43 CET 2020: classerr ---
+      nerr=5  ntot=785        error_rate=0.64%
+      Thu Dec  3 17:38:43 CET 2020
+      
+  Tabla final  usando *Random Mode*:
+  
+   |                        | LP   | LPCC | MFCC |
+  |------------------------|:----:|:----:|:----:|
+  |  Error Rate |  3.44%  |  11.72%  |  0.64% |
+  
 ### Verificación del locutor.
 
 Complete el código necesario para realizar verificación del locutor y optimice sus parámetros.
@@ -173,7 +201,46 @@ Complete el código necesario para realizar verificación del locutor y optimice
   de verificación de SPEECON. La tabla debe incluir el umbral óptimo, el número de falsas alarmas y de
   pérdidas, y el score obtenido usando la parametrización que mejor resultado le hubiera dado en la tarea
   de reconocimiento.
- 
+  
+Nuestro mejor resultado ha sido con el MFCC:
+  
+      ==============================================
+      THR: 1.00639006307311
+      Missed:     42/250=0.1680
+      FalseAlarm: 0/1000=0.0000
+      ----------------------------------------------
+      ==> CostDetection: 16.8
+      ==============================================
+      Thu Dec  3 17:26:06 CET 2020
+      
+El resultado con LPCC ha sido:
+  
+      ==============================================
+      THR: 1.0404857498784
+      Missed:     107/250=0.4280
+      FalseAlarm: 3/1000=0.0030
+      ----------------------------------------------
+      ==> CostDetection: 72.5
+      ==============================================
+      Thu Dec  3 17:29:28 CET 2020
+      
+El resultado con LP ha sido:
+
+      ==============================================
+      THR: 1.3893933039959
+      Missed:     225/250=0.9000
+      FalseAlarm: 0/1000=0.0000
+      ----------------------------------------------
+      ==> CostDetection: 90.0
+      ==============================================
+      Thu Dec  3 17:32:51 CET 2020
+    
+ Por lo que la tabla final queda de la siguiente manera:
+  
+ |                        | LP   | LPCC | MFCC |
+  |------------------------|:----:|:----:|:----:|
+  |  Cost Detection |  90.0  |  72.5  |  16.8 |
+  
 ### Test final
 
 - Adjunte, en el repositorio de la práctica, los ficheros `class_test.log` y `verif_test.log` 
