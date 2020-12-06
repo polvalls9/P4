@@ -260,6 +260,7 @@ El resultado con LP ha sido:
 - Adjunte, en el repositorio de la práctica, los ficheros `class_test.log` y `verif_test.log` 
   correspondientes a la evaluación *ciega* final.
 
+Aquí están los links que le permiten acceder directamente a los ficheros [`class_test.log`](https://github.com/polvalls9/P4/blob/pol-remei/class_test.log) y [`verif_test.log`](https://github.com/polvalls9/P4/blob/pol-remei/verif_test.log)
 ### Trabajo de ampliación.
 
 - Recuerde enviar a Atenea un fichero en formato zip o tgz con la memoria (en formato PDF) con el trabajo 
