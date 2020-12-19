@@ -150,7 +150,7 @@ Con el comando `fmatrix_show work/lp/BLOCK01/SES017/*.lp | egrep '^\[' | cut -f4
   
   + Compare los resultados de <code>pearson</code> con los obtenidos gráficamente.
   
- ` Para realizar la comparación nos hemos basado en que si el resultado de rho es muy cercano a uno en valor absoluto, quiere decir que los dos coeficientes que comparamos están muy correlados entre sí. Basándonos en eso, vemos que en el caso de LP el valor absoluto de rho es 0,872284, un valor bastante cercano a uno, por tanto conociendo el valor de uno de los dos parámetros, podemos deducir el valor del otro. Por lo que se podría decir que la información que nos proporcionan los dos parámetros es la misma que la que proporciona la información de uno solo. `
+ ` Para realizar la comparación nos hemos basado en que si el resultado de rho es muy cercano a uno en valor absoluto, quiere decir que los dos coeficientes que comparamos están muy correlados entre sí. Basándonos en eso, vemos que en el caso de LP el valor absoluto de rho es -0,872284, un valor bastante cercano a uno, por tanto conociendo el valor de uno de los dos parámetros, podemos deducir el valor del otro. Por lo que se podría decir que la información que nos proporcionan los dos parámetros es la misma que la que proporciona la información de uno solo. `
 
 `Por lo tanto, igual que se puede decir que en el LP los parámetros son corralados por que el valor absoluto de rho es cercano a 1, se puede decir lo opuesto en el caso de los LPCC y los MFCC. En estos dos últimos casos, el valor de rho es cercano a cero, por lo que se podría decir que sus parámetros son incorrelados entre sí. Esto nos dice que la información que nos proporcionan los dos parámetros es distinta a la que nos proporciona la información de uno solo. Por lo que la información conjunta de los dos parámetros nos proporciona el doble de información.` 
 
@@ -158,8 +158,8 @@ Con el comando `fmatrix_show work/lp/BLOCK01/SES017/*.lp | egrep '^\[' | cut -f4
 
 - Según la teoría, ¿qué parámetros considera adecuados para el cálculo de los coeficientes LPCC y MFCC?
 
-`Para los coeficientes LPCC se usa lpc_order=8, como esta definido en la función compute_lp(), y el número de cepstrum es igual a 3*P/2 donde P=lpc_order=8 , por lo tanto, nceps=12. Finalmente, hemos decidido incrementar estos valores para obtener mejores resultados.
-Para los coeficientes MFCC se usan los primeros 13 coefficientes + un 50% más, por lo tanto mfcc_order=19. Y el numero de filtros suele ir de 24 a 40, por lo que usamos un valor intermedio de nfilter=30.`
+`Para los coeficientes LPCC se usa lpc_order=35 y el número de cepstrum es igual a nceps=24. Finalmente, hemos decidido incrementar estos valores para obtener mejores resultados.
+Para los coeficientes MFCC se usan los primeros 13 coefficientes + un 25% más, por lo tanto mfcc_order=16. Y el numero de filtros suele ir de 24 a 40, por lo que usamos un valor intermedio de nfilter=26.`
 
 ### Entrenamiento y visualización de los GMM.
 
